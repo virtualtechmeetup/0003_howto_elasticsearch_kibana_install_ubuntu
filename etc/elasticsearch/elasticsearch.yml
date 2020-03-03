@@ -1,0 +1,37 @@
+cluster.name: lab
+
+node.name: lab1
+
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+bootstrap.memory_lock: true
+
+network.host: 0.0.0.0
+http.port: 9200
+
+discovery.type: 'single-node'
+
+indices.query.bool.max_clause_count: 8192
+search.max_buckets: 250000
+
+action.destructive_requires_name: 'true'
+
+reindex.remote.whitelist: '*:*'
+
+xpack.monitoring.enabled: 'true'
+xpack.monitoring.collection.enabled: 'true'
+xpack.monitoring.collection.interval: 30s
+
+xpack.security.enabled: 'true'
+xpack.security.audit.enabled: 'false'
+
+node.ml: 'false'
+xpack.ml.enabled: 'false'
+
+xpack.watcher.enabled: 'false'
+
+xpack.ilm.enabled: 'true'
+
+xpack.sql.enabled: 'true'
+

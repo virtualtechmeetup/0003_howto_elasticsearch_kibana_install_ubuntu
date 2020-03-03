@@ -1,0 +1,59 @@
+server.name: 'lab1'
+server.host: '0.0.0.0'
+server.port: 5601
+
+server.maxPayloadBytes: 8388608
+
+elasticsearch.hosts: ['http://127.0.0.1:9200']
+elasticsearch.username: 'kibana'
+elasticsearch.password: 'changeme'
+elasticsearch.requestTimeout: 132000
+elasticsearch.shardTimeout: 120000
+
+kibana.index: '.kibana'
+
+#kibana.defaultAppId: 'dashboard/<dashboard_id>'
+
+#logging.quiet: true
+#logging.timezone: 'UTC'
+
+vega.enableExternalUrls: true
+
+console.enabled: true
+
+xpack.security.enabled: true
+xpack.security.audit.enabled: false
+
+xpack.monitoring.enabled: true
+xpack.monitoring.kibana.collection.enabled: true
+xpack.monitoring.kibana.collection.interval: 30000
+
+xpack.monitoring.ui.enabled: true
+xpack.monitoring.min_interval_seconds: 30
+#xpack.monitoring.ui.container.elasticsearch.enabled: 'false'
+
+#xpack.apm.enabled: true
+#xpack.apm.ui.enabled: true
+
+xpack.grokdebugger.enabled: true
+xpack.searchprofiler.enabled: true
+
+xpack.graph.enabled: false
+
+xpack.infra.enabled: true
+#xpack.infra.sources.default.logAlias: 'filebeat-*'
+#xpack.infra.sources.default.metricAlias: 'metricbeat-*'
+#xpack.infra.sources.default.fields.timestamp: '@timestamp'
+#xpack.infra.sources.default.fields.message: ['message','@message']
+#xpack.infra.sources.default.fields.tiebreaker: '_doc'
+#xpack.infra.sources.default.fields.host: 'beat.hostname'
+#xpack.infra.sources.default.fields.container: 'docker.container.name'
+#xpack.infra.sources.default.fields.pod: 'kubernetes.pod.name'
+
+xpack.ml.enabled: false
+
+xpack.reporting.enabled: false
+#xpack.reporting.encryptionKey: ''
+
+#xpack.spaces.enabled: true
+#xpack.spaces.maxSpaces: 1000
