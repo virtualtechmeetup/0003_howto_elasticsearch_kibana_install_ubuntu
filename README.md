@@ -115,7 +115,7 @@ Replace the default Kibana configuration file with the provided configuration by
 
 Modify this configuration as may be appropriate for your environment.
 
-9. Start Kibana.
+3. Start Kibana.
 
 ```
 sudo systemctl daemon-reload
@@ -127,7 +127,7 @@ sudo systemctl start kibana.service
 
 Be patient. It may take a moment the first time as Kibana optimizes enabled applications.
 
-10. Enable Kibana to start automatically when the system is started.
+4. Enable Kibana to start automatically when the system is started.
 
 ```
 sudo systemctl enable kibana.service
